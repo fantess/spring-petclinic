@@ -25,7 +25,7 @@ ARG dir=build-folder
 ARG project=spring-petclinic
 
 WORKDIR /$dir
-COPY --from=$from_old /$dir_old/$project . 
+COPY --from=clone-folder /$dir_old/$project . 
 RUN mvn install && mv target/$project-*.jar target/$project.jar
 
 ###
