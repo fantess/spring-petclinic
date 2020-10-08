@@ -1,3 +1,4 @@
+![CI-swarm](https://github.com/fantess/spring-petclinic/workflows/CI-swarm/badge.svg)
 # Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=main)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
 ## Understanding the Spring Petclinic application with a few diagrams
