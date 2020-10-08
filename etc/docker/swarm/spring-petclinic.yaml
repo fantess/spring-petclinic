@@ -6,5 +6,5 @@ services:
         - node.role == worker
     image: fantess/spring-petclinic
     ports:
-      - 30002:8080
+      - 8080:8080
 version: '3.8'
