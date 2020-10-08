@@ -3,7 +3,7 @@ FROM alpine/git:latest AS clone
 ARG dir=clone-folder
 ARG hostname=github.com
 ARG project=spring-petclinic
-ARG username=secobau
+ARG username=fantess
 
 WORKDIR /$dir
 RUN git clone https://$hostname/$username/$project
@@ -30,6 +30,6 @@ ARG project=spring-petclinic.jar
 
 WORKDIR /$dir
 COPY --from=build /$dir_old/$project . 
+
 ENTRYPOINT ["java","-jar"]
-#CMD ["$project"]
-CMD $project
+CMD ["spring-petclinic.jar"]
